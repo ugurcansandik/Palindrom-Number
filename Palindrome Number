@@ -9,16 +9,20 @@ int main()
 
    	temp = n;
 
-   	while( temp != 0 ){
-    	  t = t * 10;
-      	t = t + temp%10;
-      	temp = temp/10;
+   	while( temp != 0 )
+	{
+    		t = t * 10;
+      		t = t + temp%10;
+      		temp = temp/10;
 	}
 
    	if ( n == t )
-		    printf("%d Palindrom\n", n);
+	{
+		printf("%d Palindrom\n", n);
+	}
    	else
-      	printf("%d not Palindrom\n", n);
-
+	{
+      		printf("%d not Palindrom\n", n);
+	}
    	return 0;
 }
